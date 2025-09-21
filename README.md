@@ -7,25 +7,14 @@ ZoneCode-API to lekki i wszechstronny plugin dla serwerów Minecraft opartych na
 - **Komenda informacyjna**: Użyj `/zonecode`, aby wyświetlić informacje o serwerze z brandingiem ZoneCode, w tym dane o autorach, stronie internetowej i serwerze Discord.
 - **Komenda pomocy**: Uruchom `/zonecode help`, aby zobaczyć listę dostępnych komend, dostosowaną do uprawnień użytkownika.
 - **Przeładowanie pluginu**: Przeładuj konfigurację pluginu za pomocą `/zonecode reload` bez konieczności restartowania serwera.
-- **Automatyczne aktualizacje**: Sprawdź i zainstaluj najnowszą wersję pluginu za pomocą `/zonecode update` (wymaga skonfigurowanego adresu URL aktualizacji).
+- **Automatyczne aktualizacje**: Sprawdź i zainstaluj najnowszą wersję pluginu za pomocą `/zonecode update`
 - **Konfigurowalne komunikaty**: Dostosuj prefiksy komunikatów i inne ustawienia w pliku `config.yml`.
-- **Wsparcie dla uprawnień**: Precyzyjne uprawnienia do kontroli dostępu do komend (`zonecode.use`, `zonecode.reload`, `zonecode.update`).
+- **Wsparcie dla uprawnień**: Precyzyjne uprawnienia do kontroli dostępu do komend (`zonecode.use`, `zonecode.reload`, `zonecode.update`, `zonecode.autoupdater`).
 
 ## Wymagania
 
 - **Serwer Minecraft**: Paper lub Spigot (KAŻDA WERSJA).
 - **Java**: Wersja 8 lub wyższa.
-
-## Instalacja
-
-1. **Pobierz plugin**:
-   - Pobierz najnowszy plik `ZoneCode-API.jar` ze strony Releases.
-2. **Umieść w folderze pluginów**:
-   - Skopiuj plik JAR do folderu `plugins/` na serwerze.
-3. **Uruchom/Przeładuj serwer**:
-   - Uruchom serwer Paper/Spigot, aby wygenerować plik `plugins/ZoneCode-API/config.yml`.
-4. **Konfiguracja (opcjonalna)**:
-   - Edytuj plik `config.yml`, aby dostosować prefiks komunikatów lub inne ustawienia.
 
 ## Komendy
 
@@ -35,6 +24,7 @@ ZoneCode-API to lekki i wszechstronny plugin dla serwerów Minecraft opartych na
 | `/zonecode help` | Pokazuje listę dostępnych komend. | `zonecode.use` |
 | `/zonecode reload` | Przeładowuje konfigurację pluginu. | `zonecode.reload` |
 | `/zonecode update` | Sprawdza i instaluje aktualizacje pluginu. | `zonecode.update` |
+| `/zonecode autoupdater on/off` | Samoistnie instaluje nowe aktualizacje pluginu (można tą opcje wyłączyć). | `zonecode.autoupdater` |
 
 **Aliasy**: `/developer`, `/dev`, `/development`
 
@@ -50,37 +40,11 @@ Plugin generuje plik `config.yml` w folderze `plugins/ZoneCode-API/` z następuj
 
 ```yaml
 # Konfiguracja ZoneCode-API
-version: 1.0
+version: 1.3
 message-prefix: "§5[ZoneCode] §r"
 ```
 
 Możesz zmodyfikować `message-prefix`, aby dostosować prefiks komunikatów wyświetlanych przez plugin.
-
-## Budowanie ze źródeł
-
-1. Sklonuj repozytorium:
-
-   ```bash
-   git clone https://github.com/ZoneCode-Team/ZoneCode-API.git
-   ```
-
-2. Skompiluj plugin za pomocą Mavena:
-
-   ```bash
-   mvn clean package
-   ```
-
-3. Znajdź skompilowany plik `ZoneCode-API.jar` w folderze `target/`.
-
-## Wkład w rozwój
-
-Zachęcamy do współpracy! Prześlij pull requesty lub zgłaszaj problemy na repozytorium GitHub.
-
-1. Sforkuj repozytorium.
-2. Stwórz nową gałąź (`git checkout -b feature/twoja-funkcja`).
-3. Zatwierdź zmiany (`git commit -m 'Dodaj swoją funkcję'`).
-4. Wypchnij gałąź (`git push origin feature/twoja-funkcja`).
-5. Otwórz pull request.
 
 ## Wsparcie
 
