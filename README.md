@@ -50,7 +50,7 @@ Możesz zmodyfikować `message-prefix`, aby dostosować prefiks komunikatów wy�
 
 - **Strona internetowa**: zonecode.dev
 - **Discord**: dc.zonecode.dev
-- **Problemy**: Zgłaszaj błędy lub sugestie na stronie Issues.
+- **Problemy**: Zgłaszaj błędy lub sugestie na stronie.
 
 ## Licencja
 
